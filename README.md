@@ -1,73 +1,227 @@
-# Welcome to your Lovable project
+# AutoPrompt Clone - AI Prompt Generator
 
-## Project info
+A complete 1:1 replica of the AutoPrompt.cc website - a free automatic AI prompt generator that transforms simple ideas into optimized prompts for various AI models including ChatGPT, Claude, Midjourney, and more.
 
-**URL**: https://lovable.dev/projects/e2e765d3-047f-45aa-9cf0-75283399674d
+![AutoPrompt Clone Screenshot](https://via.placeholder.com/800x400/dc2626/ffffff?text=AutoPrompt+Clone)
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **Automatic Prompt Generation**: Transform simple questions into professional, optimized prompts
+- **Multi-Model Support**: Compatible with ChatGPT, Claude, Midjourney, Stable Diffusion, and more
+- **One-Click Copy**: Instantly copy generated prompts to clipboard
+- **Context-Aware Creation**: AI intelligently adapts to your input's context
+- **Responsive Design**: Fully responsive design that works on all devices
+- **Real-time Generation**: See your prompts generated in real-time
+- **Example Gallery**: Browse pre-built prompt templates for various use cases
 
-**Use Lovable**
+## 🚀 Live Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e2e765d3-047f-45aa-9cf0-75283399674d) and start prompting.
+Visit the live demo: [AutoPrompt Clone](https://your-deployment-url.com)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui components
+- **State Management**: React Hooks (useState, useEffect)
+- **Icons**: Lucide React
+- **Notifications**: Sonner (toast notifications)
+- **Routing**: React Router DOM
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js 16.x or higher
+- npm or yarn package manager
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Quick Start
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/autoprompt-clone.git
+   cd autoprompt-clone
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+3. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to see the application running.
+
+### Build for Production
+
+```bash
+npm run build
+# or
+yarn build
 ```
 
-**Edit a file directly in GitHub**
+The built files will be in the `dist` directory, ready for deployment.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎨 Design System
 
-**Use GitHub Codespaces**
+The project uses a comprehensive design system with:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Brand Colors**: Custom red (#dc2626) with proper HSL values
+- **Typography**: Tailwind's default font stack optimized for readability
+- **Spacing**: Consistent spacing scale following Tailwind conventions
+- **Components**: Reusable UI components built with shadcn/ui
+- **Gradients**: Beautiful gradient backgrounds for enhanced visual appeal
+- **Shadows**: Carefully crafted shadow system for depth and hierarchy
 
-## What technologies are used for this project?
+## 🏗️ Project Structure
 
-This project is built with:
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # shadcn/ui base components
+│   ├── Header.tsx       # Main navigation header
+│   ├── HeroSection.tsx  # Hero section with prompt generator
+│   ├── ExampleCards.tsx # Example prompt gallery
+│   ├── FeatureSection.tsx # Features and benefits
+│   ├── HowItWorks.tsx   # How it works section
+│   ├── Testimonials.tsx # User testimonials
+│   ├── FAQ.tsx          # Frequently asked questions
+│   └── Footer.tsx       # Footer with CTA
+├── pages/               # Page components
+│   ├── Index.tsx        # Main landing page
+│   └── NotFound.tsx     # 404 error page
+├── lib/                 # Utility libraries
+│   └── utils.ts         # Common utility functions
+├── hooks/               # Custom React hooks
+│   ├── use-mobile.tsx   # Mobile detection hook
+│   └── use-toast.ts     # Toast notification hook
+├── index.css           # Global styles and design system
+└── main.tsx            # Application entry point
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔧 Configuration
 
-## How can I deploy this project?
+### Environment Variables
 
-Simply open [Lovable](https://lovable.dev/projects/e2e765d3-047f-45aa-9cf0-75283399674d) and click on Share -> Publish.
+Create a `.env` file in the root directory:
 
-## Can I connect a custom domain to my Lovable project?
+```env
+# Add any environment variables here
+VITE_APP_TITLE=AutoPrompt Clone
+```
 
-Yes, you can!
+### Tailwind Configuration
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The project uses a custom Tailwind configuration with:
+- Extended color palette for the AutoPrompt brand
+- Custom gradients and shadows
+- Responsive breakpoints
+- Animation utilities
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🚀 Deployment
+
+### Deploy to Vercel
+
+1. Push your code to a GitHub repository
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with default settings
+
+### Deploy to Netlify
+
+1. Build the project: `npm run build`
+2. Upload the `dist` folder to [Netlify](https://netlify.com)
+3. Configure redirects for React Router
+
+### Deploy to Other Platforms
+
+The built application is a static site that can be deployed to any hosting platform that supports static files:
+- GitHub Pages
+- AWS S3 + CloudFront
+- Google Cloud Storage
+- Firebase Hosting
+
+## 🎯 Key Features Implementation
+
+### Prompt Generator Engine
+
+The core prompt generation functionality simulates an AI-powered system that:
+- Analyzes user input for context and intent
+- Applies model-specific optimization techniques
+- Formats prompts for maximum effectiveness
+- Provides instant results with copy functionality
+
+### Responsive Design
+
+The application is fully responsive with:
+- Mobile-first design approach
+- Tablet and desktop optimizations
+- Touch-friendly interactive elements
+- Accessible navigation and forms
+
+### Performance Optimizations
+
+- Component-level code splitting
+- Optimized image loading
+- Efficient re-rendering with React hooks
+- Minimized bundle size with tree shaking
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Use semantic commit messages
+- Ensure all components are fully typed
+- Write responsive, accessible code
+- Test on multiple devices and browsers
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Original design inspiration from [AutoPrompt.cc](https://www.autoprompt.cc)
+- [shadcn/ui](https://ui.shadcn.com) for the beautiful component library
+- [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
+- [Lucide](https://lucide.dev) for the icon set
+
+## 📞 Support
+
+If you encounter any issues or have questions:
+
+1. Check the [Issues](https://github.com/yourusername/autoprompt-clone/issues) page
+2. Create a new issue with detailed information
+3. Join our community discussions
+
+## 🔮 Future Enhancements
+
+- [ ] Backend integration for real AI prompt generation
+- [ ] User authentication and prompt history
+- [ ] Advanced prompt customization options
+- [ ] Integration with popular AI APIs
+- [ ] Prompt template marketplace
+- [ ] Analytics and usage tracking
+- [ ] Multi-language support
+- [ ] Dark/light theme toggle
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS

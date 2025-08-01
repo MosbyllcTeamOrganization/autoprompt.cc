@@ -24,9 +24,19 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				/* AutoPrompt Brand Colors */
+				brand: {
+					red: 'hsl(var(--brand-red))',
+					'red-foreground': 'hsl(var(--brand-red-foreground))',
+					gray: 'hsl(var(--brand-gray))',
+					dark: 'hsl(var(--brand-dark))',
+					'light-gray': 'hsl(var(--brand-light-gray))'
+				},
+				
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: 'hsl(var(--brand-red))',
+					foreground: 'hsl(var(--brand-red-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -63,6 +73,22 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			
+			/* AutoPrompt Design System Extensions */
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'hero': 'var(--shadow-hero)'
+			},
+			
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)'
+			},
+			
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

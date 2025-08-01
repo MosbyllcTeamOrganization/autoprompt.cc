@@ -2,14 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AutoPrompt Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    
+    /* AutoPrompt Brand Colors */
+    --brand-red: 0 85% 50%;
+    --brand-red-foreground: 0 0% 100%;
+    --brand-gray: 0 0% 95%;
+    --brand-dark: 220 13% 18%;
+    --brand-light-gray: 220 13% 96%;
+    
+    /* AutoPrompt Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0, 85%, 50%), hsl(15, 85%, 55%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(220, 13%, 98%));
+    
+    /* AutoPrompt Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(220, 13%, 18% / 0.1), 0 2px 4px -1px hsl(220, 13%, 18% / 0.06);
+    --shadow-hero: 0 10px 25px -3px hsl(0, 85%, 50% / 0.1);
+    
+    /* AutoPrompt Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
